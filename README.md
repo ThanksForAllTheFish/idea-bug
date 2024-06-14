@@ -5,12 +5,12 @@ When trying to extract a variable from
 ```kotlin
 fun main() {
     WithinALambda {
-        Test(stub())
+        Test()
     }
 }
 ```
 
-by typing `stub().val` then pressing `Enter`, nothing happens, no matter how long I wait; when pressing any key, the following dialog appears:
+by typing `Test().val` then pressing `Enter`, nothing happens, no matter how long I wait; when pressing any key, the following dialog appears:
 
 ![dialog.png](dialog.png)
 
@@ -18,8 +18,8 @@ Extracting from
 
 ```kotlin
 fun main() { 
-    Test(stub())
+    Test()
 }
 ```
 
-works as expected (a new variable named `stub` is created).
+works as expected (a new variable named `test` is created).
